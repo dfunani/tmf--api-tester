@@ -1,0 +1,11 @@
+<scroll-view scroll-x="true" class="nav-bar-scroll-container" catch:tap="clearDropDown">
+    <view id="nav-bar-container">
+    <image class="logo" catch:tap="home" src="../../public/images/logo.png"/>
+    <view wx:for="{{globalApis}}" wx:for-item="key" wx:for-index="item" wx:key="{{key}}" >
+        <view class="nav-bar-container-item" data-key="{{item}}" catch:tap="dropDownKey"><text>{{item}}</text><image class="caret-down-fill" src="../../public/images/caret-down-fill.svg"/></view>
+    </view>
+    </view>
+</scroll-view>
+<view class="dropdown-container" wx:if="{{dropdownClicked}}">
+            <text wx:for="{{globalApis[dropDownKey].content}}" wx:for-item="key" wx:for-index="item" wx:key="{{key}}" data-api="{{item}}" catch:tap="openKey">{{item}}</text>
+        </view>

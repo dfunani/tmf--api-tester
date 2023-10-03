@@ -1,0 +1,24 @@
+<view class="modal" wx:if="{{isModal}}" >
+        <text>{{implementation}}</text>
+        <button catch:tap="clear">X</button>
+    </view>
+    <scroll-view scroll-y="true" catch:tap="clearDropDown">
+<view catch:tap="clear" wx:for="{{apis}}" wx:for-item="item" wx:for-index="index" wx:key="{{index}}" class="card-container">
+    <view class="card-body">
+        <view><text class="bold">{{item.name}}</text> </view>
+        <view><text>{{item.description}}</text> </view>
+    </view>
+        <view class="card-demo" wx:if="{{item.display}}">
+        <text>{{responseItem[item.name]}}</text>
+        </view>
+    <view class="card-demo-container">
+        <input wx:for="{{item.args}}" data-i="{{i}}" data-name="{{item.name}}" catchinput="onInput" wx:for-item="arg" wx:for-index="i" wx:key="{{i}}" class="demo-input" placeholder="{{'Please provide ' + arg}}"/>
+        <view class="demo-btn">
+        <button wx:if="{{item.implementation}}" data-implementation="{{item.implementation}}" catch:tap="setModal" class="demo-btn-button">Learn</button>
+        <button wx:if="{{item.action}}" class="demo-btn-button" data-i="{{index}}" data-item="{{item}}" catch:tap="setDisplay">Demo</button>
+        </view>
+    </view>
+</view>
+</scroll-view>
+
+

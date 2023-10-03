@@ -1,0 +1,164 @@
+.container {
+}
+
+.logo{
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  background-color: #0061a2;
+  border: 0;
+}
+
+.active-api-header {
+  margin: 20px;
+  font-weight: bolder;
+  font-size: 24px;
+}
+.nav-bar-scroll-container,
+#nav-bar-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 0.625rem;
+  height: 2.5rem;
+  background-color: #0061a2;
+  color: white;
+}
+
+
+.nav-bar-container-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  font-size: 18px;
+}
+
+.caret-down-fill {
+  width: 15px;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 5;
+  background-color: #0061a2;
+  width: auto;
+  padding: 10px;
+  color: white;
+}
+
+.card-container {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 16px;
+  margin: 15px;
+  box-shadow: 0px 0px 17.5px -3px #0061a2;
+  -webkit-box-shadow: 0px 0px 17.5px -3px #0061a2;
+  -moz-box-shadow: 0px 0px 17.5px -3px #0061a2;
+}
+
+.card-container-key {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 16px;
+  margin: 15px;
+  gap: 10px;
+  box-shadow: 0px 0px 17.5px -3px #0061a2;
+  -webkit-box-shadow: 0px 0px 17.5px -3px #0061a2;
+  -moz-box-shadow: 0px 0px 17.5px -3px #0061a2;
+}
+
+.card-demo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card-count {
+  background-color: #0061a2;
+  border: none;
+  color: white;
+  padding: 7.5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.buffer {
+  color: transparent;
+}
+.bold {
+  font-weight: bolder;
+}
+
+.demo-btn {
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  gap: 10px;
+}
+
+.demo-btn-button {
+  background-color: #0061a2;
+  color: white;
+  margin-top: 5px;
+}
+
+.demo-input {
+  width: 100%;
+  margin-top: 5px;
+  border-bottom: solid black 1px;
+}
+
+.modal {
+  top: 50%;
+  width: 100%;
+  left: 0px;
+  min-height: 50%;
+  height: auto;
+  margin-top: -9em;
+  border: 1px solid #666;
+  background-color: #0061a2;
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.modal > text {
+  width: 70%;
+  text-align: start;
+  color: white;
+  word-wrap: break-word;
+}
+
+.modal > button {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 10%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0061a2;
+}
+
+.card-demo {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}

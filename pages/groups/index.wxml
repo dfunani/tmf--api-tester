@@ -1,0 +1,11 @@
+<include src="../../components/layout/nav-bar.wxml" />
+<view class="active-api-header">{{activeApi}}</view>
+<include src="../../components/card.wxml" />
+
+<wxs module="card">
+var getKeys = function(object){
+    return object.content.length;
+};
+
+module.exports.getKeys = getKeys;
+</wxs>

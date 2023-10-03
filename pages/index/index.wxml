@@ -1,0 +1,14 @@
+<include src="../../components/layout/nav-bar.wxml"/>
+<include src="../../components/card.wxml" />
+
+<wxs module="card">
+var getKeys = function(object){
+    var count = 0;
+    for(var key in object.content){
+        count++;
+    }
+    return count;
+};
+
+module.exports.getKeys = getKeys;
+</wxs>
